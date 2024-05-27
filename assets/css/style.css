@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #FFF
+}
+.body-container{
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1376px;
+    width: 100%;
+    padding: 0px 15px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.text-left{
+    text-align: left !important;
+}
+.text-center{
+    text-align: center !important;
+}
+.text-right{
+    text-align: right !important;
+}
+.section-title .title{
+    color: #70727C;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 11px 21px;
+    border-radius: 40px;
+    border: 1px solid #DBDBE0;
+    background: #F3F4F6;
+    margin-bottom: 23px;
+    max-width: max-content;
+}
+.section-title .subtitle{
+    font-size: 48px;
+    font-weight: 700;
+}
+.section-title.text-left, .section-title.text-left .title, .section-title.text-left .subtitle{
+   margin-right: auto;
+}
+.section-title.text-center, .section-title.text-center .title, .section-title.text-center .subtitle{
+    margin: auto;
+}
+.section-title.text-right, .section-title.text-right .title, .section-title.text-right .subtitle{
+    margin-left: auto;
+}
+.luup-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 13px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px;
+    background: #0F1634;
+    
+}
