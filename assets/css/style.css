@@ -137,3 +137,36 @@ img{
     width: 100%;
 }
 /*-- banner section end --*/
+
+/*-- events section start --*/
+.events-section {
+    padding-bottom: 122px;
+}
+.events-right h4 {
+    color: #000;
+    text-align: right;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 68px;
+    margin-bottom: 16px;
+}
+.events-right p {
+    color: #000;
+text-align: right;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.event-btn {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 16px;
+}
+
+
+
+/*-- events section end --*/
