@@ -206,11 +206,12 @@ img {
 }
 
 .feactures-card1 .overlay {
-    background: url(../image/bg/feacture-card1-bg.png);
+    background: url(../image/bg/card-bg1.png);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 12px;
     border: 1px solid #B9BCC7;
+
 }
 
 .feacuter-text h4 {
@@ -226,7 +227,134 @@ img {
     font-weight: 700;
     line-height: normal;
     text-align: center;
+    padding: 35px;
+    text-align: center;
 }
 
+.feacuter-text p {
+    display: flex;
+    width: 546px;
+    height: 150px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 52px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+}
+
+.feacture-img {
+    text-align: center;
+}
+
+.feactures-card2 .overlay {
+    background: url(../image/bg/card-bg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    border: 1px solid #B9BCC7;
+
+}
+
+.feacture-card3 .overlay {
+    background: url(../image/bg/Entscheide-card-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    border: 1px solid var(--G2, #DBDBE0);
+
+}
+
+.feacture-card3 h6 {
+    display: flex;
+    width: 359px;
+    height: 33px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 58px;
+    margin-top: 168px;
+    margin-bottom: 30px;
+}
+
+.feacture-card3 p {
+    display: flex;
+    width: 382px;
+    height: 149px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 58px;
+}
+
+.Entscheide-img {
+    padding: 39px 0px;
+}
 
 /*-- feacture section end --*/
+
+/*-- gemeinsamer section start --*/
+.gemeinsamer-section {
+    background: #ECECFC;
+    width: 100%;
+    height: 434px;
+
+}
+
+.gemeinsamer-text h4 {
+    width: 1102.667px;
+    height: 61px;
+    color: var(--Dark-Blue, #0F1634);
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 89px;
+
+}
+
+.gemeinsamer-card {
+    display: flex;
+    width: 261px;
+    padding: 21px 25px 52px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    border-radius: 8px;
+    border: 1px solid #CCC2F4;
+    background: linear-gradient(123deg, #DCD9F3 0%, #ECECFC 69.27%);
+    margin-top: 128px;
+    
+}
+
+.gemeinsamer-card h6 {
+    display: flex;
+    width: 211px;
+    height: 25px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+/*-- gemeinsamer section end --*/
