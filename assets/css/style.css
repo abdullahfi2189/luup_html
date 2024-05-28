@@ -43,7 +43,9 @@ a {
 img {
     max-width: 100%;
 }
-
+.text-dark-blue{
+    color: #0F1634 !important;
+}
 .text-left {
     text-align: left !important;
 }
@@ -86,6 +88,7 @@ img {
 .section-title.text-center .title,
 .section-title.text-center .subtitle {
     margin: auto;
+    margin-bottom: 23px;
 }
 
 .section-title.text-right,
@@ -121,16 +124,18 @@ img {
 /* header-style-start */
 .header-section {
     padding: 29px 0px;
-    background-image: url(../image/bg/header-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
+    background: transparent;
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
     z-index: 99999;
-
+}
+.header-section.sticky{
+    background-image: url(../image/bg/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
 }
 
 .header-inner {
@@ -200,60 +205,61 @@ img {
 
 /*-- events section end --*/
 
-/*-- feacture section start --*/
-.feactures-section {
-    padding-bottom: 55px;
+/*-- feature section start --*/
+.feature-section {
+    padding-bottom: 88px;
 }
-
-.feactures-card1 .overlay {
+.feature-content{
+    margin-top: 65px;
+}
+.feature-card {
+    padding: 35px;
+    margin-bottom: 45px;
+}
+.feature-card1 {
     background: url(../image/bg/card-bg1.png);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 12px;
     border: 1px solid #B9BCC7;
-
 }
 
-.feacuter-text h4 {
-    display: flex;
-    width: 491px;
-    height: 33px;
-    flex-direction: column;
-    justify-content: center;
-    color: #000;
+.feature-text h4 {
+    max-width: 491px;
+    margin: auto;
     text-align: center;
     font-size: 24px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    text-align: center;
-    padding: 35px;
-    text-align: center;
 }
 
-.feacuter-text p {
+.feature-text p {
     display: flex;
-    width: 546px;
-    height: 150px;
-    flex-direction: column;
-    justify-content: center;
-    color: #000;
-    font-family: "Open Sans";
+    max-width: 546px;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 52px;
+    margin: auto;
     margin-top: 24px;
     margin-bottom: 24px;
 
 }
 
-.feacture-img {
+.feature-img {
     text-align: center;
+    max-width: 380px;
+    height: 360px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+.feature-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-.feactures-card2 .overlay {
+.feature-card2 {
     background: url(../image/bg/card-bg2.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -262,7 +268,7 @@ img {
 
 }
 
-.feacture-card3 .overlay {
+.feature-card3 .overlay {
     background: url(../image/bg/Entscheide-card-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -271,7 +277,7 @@ img {
 
 }
 
-.feacture-card3 h6 {
+.feature-card3 h6 {
     display: flex;
     width: 359px;
     height: 33px;
@@ -287,7 +293,7 @@ img {
     margin-bottom: 30px;
 }
 
-.feacture-card3 p {
+.feature-card3 p {
     display: flex;
     width: 382px;
     height: 149px;
@@ -305,16 +311,20 @@ img {
     padding: 39px 0px;
 }
 
-/*-- feacture section end --*/
+/*-- feature section end --*/
 
 /*-- gemeinsamer section start --*/
 .gemeinsamer-section {
     background: #ECECFC;
     width: 100%;
-    height: 434px;
-
+    padding-top: 88px;
+    padding-bottom: 108px;
 }
-
+.gemeinsamer-content{
+    max-width: 925px;
+    margin: auto;
+    margin-top: 35px;
+}
 .gemeinsamer-text h4 {
     width: 1102.667px;
     height: 61px;
@@ -327,33 +337,24 @@ img {
     padding-top: 89px;
 
 }
-
 .gemeinsamer-card {
-    display: flex;
-    width: 261px;
-    padding: 21px 25px 52px 25px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
     border-radius: 8px;
     border: 1px solid #CCC2F4;
     background: linear-gradient(123deg, #DCD9F3 0%, #ECECFC 69.27%);
-    margin-top: 128px;
+    padding: 21px 25px;
+    min-height: 100%;
     
 }
-
-.gemeinsamer-card h6 {
+.gemeinsamer-card span{
     display: flex;
-    width: 211px;
-    height: 25px;
-    flex-direction: column;
-    justify-content: center;
-    color: #000;
-    font-family: "Open Sans";
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+.gemeinsamer-card h6 {
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    margin-top: 8px;
     
 }
 
