@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*-- reset style start --*/
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,36 +18,45 @@ body{
     line-height: normal;
     background: #FFF
 }
-.body-container{
+
+.body-container {
     overflow-x: hidden;
 }
-.container{
+
+.container {
     max-width: 1376px;
     width: 100%;
     padding: 0px 15px;
     margin: auto;
 }
-ul{
+
+ul {
     list-style: none;
     padding: 0px;
     margin: 0px;
 }
-a{
+
+a {
     text-decoration: none;
 }
-img{
+
+img {
     max-width: 100%;
 }
-.text-left{
+
+.text-left {
     text-align: left !important;
 }
-.text-center{
+
+.text-center {
     text-align: center !important;
 }
-.text-right{
+
+.text-right {
     text-align: right !important;
 }
-.section-title .title{
+
+.section-title .title {
     color: #70727C;
     text-align: center;
     font-family: "Work Sans";
@@ -60,20 +70,31 @@ img{
     margin-bottom: 23px;
     max-width: max-content;
 }
-.section-title .subtitle{
+
+.section-title .subtitle {
     font-size: 48px;
     font-weight: 700;
 }
-.section-title.text-left, .section-title.text-left .title, .section-title.text-left .subtitle{
-   margin-right: auto;
+
+.section-title.text-left,
+.section-title.text-left .title,
+.section-title.text-left .subtitle {
+    margin-right: auto;
 }
-.section-title.text-center, .section-title.text-center .title, .section-title.text-center .subtitle{
+
+.section-title.text-center,
+.section-title.text-center .title,
+.section-title.text-center .subtitle {
     margin: auto;
 }
-.section-title.text-right, .section-title.text-right .title, .section-title.text-right .subtitle{
+
+.section-title.text-right,
+.section-title.text-right .title,
+.section-title.text-right .subtitle {
     margin-left: auto;
 }
-.luup-btn{
+
+.luup-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,14 +106,16 @@ img{
     font-weight: 700;
     border-radius: 40px;
     background: #0F1634;
-    max-width: max-content;  
+    max-width: max-content;
     transition: 0.4s;
-    border: 2px solid #0F1634; 
+    border: 2px solid #0F1634;
 }
-.luup-btn:hover{
+
+.luup-btn:hover {
     color: #0F1634;
-    background: #FFFFFF;    
+    background: #FFFFFF;
 }
+
 /*-- reset style end --*/
 
 /* header-style-start */
@@ -109,23 +132,26 @@ img{
     z-index: 99999;
 
 }
+
 .header-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
+
 /*-- header section end--*/
 
 /*-- banner section start --*/
-.banner-section{
+.banner-section {
     background-image: url(../image/bg/banner-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
     padding: 195px 0px;
 }
-.banner-left p{
+
+.banner-left p {
     max-width: 417px;
     width: 100%;
     color: #000;
@@ -133,15 +159,18 @@ img{
     font-weight: 400;
     margin: 25px 0px;
 }
-.banner-img{
+
+.banner-img {
     width: 100%;
 }
+
 /*-- banner section end --*/
 
 /*-- events section start --*/
 .events-section {
     padding-bottom: 122px;
 }
+
 .events-right h4 {
     color: #000;
     text-align: right;
@@ -152,14 +181,16 @@ img{
     margin-top: 68px;
     margin-bottom: 16px;
 }
+
 .events-right p {
     color: #000;
-text-align: right;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    text-align: right;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
+
 .event-btn {
     display: flex;
     align-items: center;
@@ -167,6 +198,35 @@ line-height: normal;
     margin-top: 16px;
 }
 
-
-
 /*-- events section end --*/
+
+/*-- feacture section start --*/
+.feactures-section {
+    padding-bottom: 55px;
+}
+
+.feactures-card1 .overlay {
+    background: url(../image/bg/feacture-card1-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    border: 1px solid #B9BCC7;
+}
+
+.feacuter-text h4 {
+    display: flex;
+    width: 491px;
+    height: 33px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+
+/*-- feacture section end --*/
