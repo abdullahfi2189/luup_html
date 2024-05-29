@@ -240,6 +240,11 @@ img {
     margin: auto;
     margin-top: 24px;
     margin-bottom: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
 
 }
 
