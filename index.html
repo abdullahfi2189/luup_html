@@ -23,7 +23,7 @@
                         <a href="index.html"><img src="./assets/image/logo/logo.png" alt="logo"></a>
                     </div>
                     <div class="header-right">
-                        <a href="#" class="luup-btn">Testen</a>
+                        <a href="#" class="luup-btn"  data-bs-toggle="modal" data-bs-target="#luupModal">Testen</a>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                                 <h2 class="subtitle">Die Software für CSRD Wesentlichkeit<span>- </span>sanalysen</h2>
                             </div>
                             <p>Spare 400h+ mit dem Luup Assistant. Spezialisiert. Schnell. Sicher.</p>
-                            <a href="#" class="luup-btn">Testen →</a>
+                            <a href="#" class="luup-btn"  data-bs-toggle="modal" data-bs-target="#luupModal">Testen →</a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -74,7 +74,7 @@
                                     <h4>Webinar </h4>
                                     <p>Insider Einblicke | Löse das Rätsel rund um (insert full title)</p>
                                     <div class="event-btn">
-                                        <a href="#" class="luup-btn">Teilnehmen</a>
+                                        <a href="#" class="luup-btn" data-bs-toggle="modal" data-bs-target="#luupModal">Teilnehmen</a>
                                     </div>
                                 </div>
                             </div>
@@ -131,9 +131,11 @@
                                     <div class="col-md-5">
                                         <div class="feature-card3-text">
                                             <h6>Entscheide selbst über die Wesentlichkeit</h6>
-                                            <p>Entscheide auf Grundlage Deines Wissens und der Hilfe des Luup Assistants, ob
-                                            ein Nachhaltigkeitsaspekt wesentlich oder nicht wesentlich für Deinen CSRD
-                                            Lagebericht wird.</p>
+                                            <p>Entscheide auf Grundlage Deines Wissens und der Hilfe des Luup
+                                                Assistants, ob
+                                                ein Nachhaltigkeitsaspekt wesentlich oder nicht wesentlich für Deinen
+                                                CSRD
+                                                Lagebericht wird.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-7">
@@ -174,7 +176,8 @@
                             <div class="gemeinsamer-card">
                                 <span>
                                     <img src="./assets/image/icons/icon2.png" alt="icon2">
-                                    <img src="./assets/image/sponsers/phiyond.png" alt="logo" class="gemeinsamer-sponsor">
+                                    <img src="./assets/image/sponsers/phiyond.png" alt="logo"
+                                        class="gemeinsamer-sponsor">
                                 </span>
                                 <h6>Expert:innen für Nachhaltigkeit</h6>
                             </div>
@@ -328,6 +331,27 @@
             </div>
         </footer>
         <!-- Footer Section end  -->
+
+
+        <!-- pop up -->
+        <!-- Modal -->
+        <div class="modal fade" id="luupModal" tabindex="-1" aria-labelledby="luupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="luupModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -339,14 +363,14 @@
     <!-- header sticky js -->
     <script>
         // When the user scrolls the page, execute the function
-        window.onscroll = function() {toggleStickyHeader()};
+        window.onscroll = function () { toggleStickyHeader() };
         function toggleStickyHeader() {
             // Get the header
             var header = document.getElementById("header");
-    
+
             // Get the offset position of the header
             var sticky = header.offsetTop;
-    
+
             // Add the sticky class to the header when you reach its scroll position.
             // Remove "sticky" when you leave the scroll position
             if (window.pageYOffset > sticky) {

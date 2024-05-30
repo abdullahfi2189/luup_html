@@ -30,6 +30,10 @@ body {
     margin: auto;
 }
 
+.modal.fade.show{
+    z-index: 999999;
+}
+
 ul {
     list-style: none;
     padding: 0px;
