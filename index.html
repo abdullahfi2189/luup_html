@@ -38,7 +38,7 @@
                         <div class="banner-left">
                             <div class="section-title text-left">
                                 <h6 class="title">Empfohlen von Wirtschaftsprüfenden</h6>
-                                <h2 class="subtitle">Die Software für CSRD Wesentlichkeitsanalysen</h2>
+                                <h2 class="subtitle">Die Software für CSRD Wesentlichkeit<span>- </span>sanalysen</h2>
                             </div>
                             <p>Spare 400h+ mit dem Luup Assistant. Spezialisiert. Schnell. Sicher.</p>
                             <a href="#" class="luup-btn">Testen →</a>
@@ -57,22 +57,26 @@
         <!-- events section start -->
         <section class="events-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-md-5">
-                        <div class="events-img">
-                            <img src="./assets/image/img/events-img.png" alt="img">
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-md-7">
-                        <div class="events-right">
-                            <div class="section-title text-right">
-                                <h6 class="title">EVents</h6>
-                                <h2 class="subtitle">Unsere kommenden Veranstaltungen</h2>
+                <div class="event-content">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-5">
+                            <div class="events-img">
+                                <img src="./assets/image/img/events-img.png" alt="img">
                             </div>
-                            <h4>Webinar </h4>
-                            <p>Insider Einblicke | Löse das Rätsel rund um (insert full title)</p>
-                            <div class="event-btn">
-                                <a href="#" class="luup-btn">Teilnehmen</a>
+                        </div>
+                        <div class="col-xl-6 col-md-7">
+                            <div class="events-right">
+                                <div class="section-title text-right">
+                                    <h6 class="title">EVents</h6>
+                                    <h2 class="subtitle"><span>Unsere</span> kommenden Veranstaltungen</h2>
+                                </div>
+                                <div class="event-text-bottom">
+                                    <h4>Webinar </h4>
+                                    <p>Insider Einblicke | Löse das Rätsel rund um (insert full title)</p>
+                                    <div class="event-btn">
+                                        <a href="#" class="luup-btn">Teilnehmen</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -125,10 +129,12 @@
                             <div class="overlay">
                                 <div class="row">
                                     <div class="col-md-5">
-                                        <h6>Entscheide selbst über die Wesentlichkeit</h6>
-                                        <p>Entscheide auf Grundlage Deines Wissens und der Hilfe des Luup Assistants, ob
+                                        <div class="feature-card3-text">
+                                            <h6>Entscheide selbst über die Wesentlichkeit</h6>
+                                            <p>Entscheide auf Grundlage Deines Wissens und der Hilfe des Luup Assistants, ob
                                             ein Nachhaltigkeitsaspekt wesentlich oder nicht wesentlich für Deinen CSRD
                                             Lagebericht wird.</p>
+                                        </div>
                                     </div>
                                     <div class="col-md-7">
                                         <div class="Entscheide-img">
@@ -156,7 +162,7 @@
                 </div>
                 <div class="gemeinsamer-content">
                     <div class="row">
-                        <div class="col-md-4 px-4 lg-px-3">
+                        <div class="col-md-4 px-4">
                             <div class="gemeinsamer-card">
                                 <span>
                                     <img src="./assets/image/icons/icon1.png" alt="icon1">
@@ -164,16 +170,16 @@
                                 <h6>Wirtschaftprüfer:innen</h6>
                             </div>
                         </div>
-                        <div class="col-md-4 px-4 lg-px-3">
+                        <div class="col-md-4 px-4">
                             <div class="gemeinsamer-card">
                                 <span>
                                     <img src="./assets/image/icons/icon2.png" alt="icon2">
-                                    <img src="./assets/image/sponsers/phiyond.png" alt="logo">
+                                    <img src="./assets/image/sponsers/phiyond.png" alt="logo" class="gemeinsamer-sponsor">
                                 </span>
                                 <h6>Expert:innen für Nachhaltigkeit</h6>
                             </div>
                         </div>
-                        <div class="col-md-4 px-4 lg-px-3">
+                        <div class="col-md-4 px-4">
                             <div class="gemeinsamer-card">
                                 <span>
                                     <img src="./assets/image/icons/icon3.png" alt="icon3">
@@ -287,17 +293,8 @@
         <!-- Footer Section start  -->
         <footer class="footer-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="footer-left">
-                            <a href="index.html"><img src="./assets/image/logo/logo.png" alt="logo"></a>
-                            <p><a href="#">© 2024 Luup.</a> All rights reserved.</p>
-                            <ul class="footer-social-list">
-                                <li><a href="#"><img src="./assets/image/icons/in.svg" alt="icon"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
+                <div class="row flex-row-reverse">
+                    <div class="col-xl-6 col-md-7">
                         <div class="footer-menu">
                             <div class="footer-menu-list">
                                 <h5>Lerne uns kennen</h5>
@@ -314,6 +311,17 @@
                                     <li><a href="#">AGBs</a></li>
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-5">
+                        <div class="footer-left">
+                            <div class="footer-left-top">
+                                <a href="index.html"><img src="./assets/image/logo/logo.png" alt="logo"></a>
+                                <p><a href="#">© 2024 Luup.</a> All rights reserved.</p>
+                            </div>
+                            <ul class="footer-social-list">
+                                <li><a href="#"><img src="./assets/image/icons/in.svg" alt="icon"></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
