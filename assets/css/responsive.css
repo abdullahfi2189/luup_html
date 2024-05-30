@@ -396,4 +396,10 @@
     .events-img{
         max-width: 130px;
     }
+    .whitepaper-img {
+        min-width: 360px;
+        min-height: 360px;
+        max-width: 360px;
+        max-height: 360px;
+    }
 }
