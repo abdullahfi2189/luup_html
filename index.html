@@ -23,7 +23,8 @@
                         <a href="index.html"><img src="./assets/image/logo/logo.png" alt="logo"></a>
                     </div>
                     <div class="header-right">
-                        <a href="#" class="luup-btn"  data-bs-toggle="modal" data-bs-target="#luupModal">Testen</a>
+                        <a href="#" class="luup-btn" data-bs-toggle="modal"
+                            data-bs-target="#googleCalenderModal">Testen</a>
                     </div>
                 </div>
             </div>
@@ -41,7 +42,7 @@
                                 <h2 class="subtitle">Die Software für CSRD Wesentlichkeit<span>- </span>sanalysen</h2>
                             </div>
                             <p>Spare 400h+ mit dem Luup Assistant. Spezialisiert. Schnell. Sicher.</p>
-                            <a href="#" class="luup-btn"  data-bs-toggle="modal" data-bs-target="#luupModal">Testen →</a>
+                            <a href="#" class="luup-btn">Testen →</a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -74,7 +75,8 @@
                                     <h4>Webinar </h4>
                                     <p>Insider Einblicke | Löse das Rätsel rund um (insert full title)</p>
                                     <div class="event-btn">
-                                        <a href="#" class="luup-btn" data-bs-toggle="modal" data-bs-target="#luupModal">Teilnehmen</a>
+                                        <a href="#" class="luup-btn" data-bs-toggle="modal"
+                                            data-bs-target="#eventModal">Teilnehmen</a>
                                     </div>
                                 </div>
                             </div>
@@ -204,7 +206,8 @@
                     <div class="whitepaper-card">
                         <div class="whitepaper-img">
                             <img src="./assets/image/img/whitepaper1.png" alt="img" class="img whitepaper-image">
-                            <a href="#" class="download-icon"><img src="./assets/image/icons/icon_download.png"
+                            <a href="#" class="download-icon" data-bs-toggle="modal"
+                                data-bs-target="#whitepaper1Modal"><img src="./assets/image/icons/icon_download.png"
                                     alt="download-icon"></a>
                         </div>
                         <div class="whitepaper-text">
@@ -223,7 +226,8 @@
                                         <h6>21. März 2024 • 6 min Lesezeit</h6>
                                     </div>
                                 </div>
-                                <a href="#" class="luup-btn download-button">Download ↓</a>
+                                <a href="#" class="luup-btn download-button" data-bs-toggle="modal"
+                                    data-bs-target="#whitepaper1Modal">Download ↓</a>
                             </div>
                         </div>
                     </div>
@@ -231,7 +235,8 @@
                     <div class="whitepaper-card">
                         <div class="whitepaper-img">
                             <img src="./assets/image/img/whitepaper2.png" alt="img" class="img whitepaper-image">
-                            <a href="#" class="download-icon"><img src="./assets/image/icons/icon_download.png"
+                            <a href="#" class="download-icon" data-bs-toggle="modal"
+                                data-bs-target="#whitepaper2Modal"><img src="./assets/image/icons/icon_download.png"
                                     alt="download-icon"></a>
                         </div>
                         <div class="whitepaper-text">
@@ -250,7 +255,8 @@
                                         <h6>28. März 2024 • 15 min Lesezeit</h6>
                                     </div>
                                 </div>
-                                <a href="#" class="luup-btn download-button">Download ↓</a>
+                                <a href="#" class="luup-btn download-button" data-bs-toggle="modal"
+                                    data-bs-target="#whitepaper2Modal">Download ↓</a>
                             </div>
                         </div>
                     </div>
@@ -269,7 +275,8 @@
                         <div class="luup-input">
                             <input type="email" placeholder="Gib hier deine Email-Adresse ein">
                         </div>
-                        <button type="submit" class="luup-btn">Anmelden</button>
+                        <button type="button" class="luup-btn" data-bs-toggle="modal"
+                            data-bs-target="#newsletterModal">Anmelden</button>
                     </form>
                 </div>
             </div>
@@ -302,16 +309,17 @@
                             <div class="footer-menu-list">
                                 <h5>Lerne uns kennen</h5>
                                 <ul>
-                                    <li><a href="#">Kontakt</a></li>
+                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#contractModal">Kontakt</a>
+                                    </li>
                                     <li><a href="#">Demo</a></li>
                                 </ul>
                             </div>
                             <div class="footer-menu-list">
                                 <h5>Ressourcen</h5>
                                 <ul>
-                                    <li><a href="#">Datenschutzerklärung</a></li>
-                                    <li><a href="#">Cookie-Richtlinie</a></li>
-                                    <li><a href="#">AGBs</a></li>
+                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#privecyModal">Datenschutzerklärung</a></li>
+                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#cokiePolicyModal">Cookie-Richtlinie</a></li>
+                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#tramsAndConditionModal">AGBs</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -334,24 +342,221 @@
 
 
         <!-- pop up -->
-        <!-- Modal -->
-        <div class="modal fade" id="luupModal" tabindex="-1" aria-labelledby="luupModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+        <!-- googleCalenderModal -->
+        <div class="modal fade" id="googleCalenderModal" tabindex="-1" aria-labelledby="googleCalenderModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog google-calender-modal">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="luupModalLabel">Modal title</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
                     <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        <div class="modal-content-inner">
+                            <div class="modal-title">
+                                <h4>Shows google calendar</h4>
+                            </div>
+                            <!-- Google Calendar Appointment Scheduling begin -->
+                            <link href="https://calendar.google.com/calendar/scheduling-button-script.css"
+                                rel="stylesheet">
+                            <script src="https://calendar.google.com/calendar/scheduling-button-script.js"
+                                async></script>
+                            <script> (function () { var target = document.currentScript; window.addEventListener('load', function () { calendar.schedulingButton.load({ url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1GQZjpI8d1ws8qgSIHAYTG7Om8Ud4jcDZnn1zbr3NGtfJixRvqdxUnoC3pHXKs6bXudEz8BTI6?gv=true', color: '#039BE5', label: 'Termin eintragen', target, }); }); })(); </script>
+                            <!-- end Google Calendar Appointment Scheduling -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- eventModal -->
+        <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        <div class="modal-content-inner">
+                            <div class="modal-title">
+                                <h4>Shows event on eventbrite</h4>
+                            </div>
+                            <!-- Noscript-Inhalt für hinzugefügtes SEO --><noscript><a
+                                    href="https://www.eventbrite.de/e/was-die-wirtschaftsprufung-alles-zur-doppelten-wesentlichkeitsanalyse-sagt-bdo-berichtet-tickets-913789828977"
+                                    rel="noopener noreferrer" target="_blank">Ticketkauf auf
+                                    Eventbrite</a></noscript><!-- Sie können diese Schaltfläche individuell anpassen. --><button
+                                id="eventbrite-widget-modal-trigger-913789828977" type="button">Tickets kaufen</button>
+                            <script src="https://www.eventbrite.de/static/widgets/eb_widgets.js"></script>
+                            <script
+                                type="text/javascript">    var exampleCallback = function () { console.log('Bestellung ist abgeschlossen!'); }; window.EBWidgets.createWidget({ widgetType: 'checkout', eventId: '913789828977', modal: true, modalTriggerElementId: 'eventbrite-widget-modal-trigger-913789828977', onOrderComplete: exampleCallback });</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contractModal -->
+        <div class="modal fade" id="contractModal" tabindex="-1" aria-labelledby="contractModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        <div class="modal-content-inner">
+                            <div class="modal-title">
+                                <h4>Shows form in hubspot</h4>
+                            </div>
+                            <script charset="utf-8" type="text/javascript"
+                                src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+                            <script>
+                                hbspt.forms.create({
+                                    region: "eu1",
+                                    portalId: "144410373",
+                                    formId: "fdc56998-b30d-458f-926e-e7ae74ebad1e"
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- whitepaper1Modal -->
+        <div class="modal fade" id="whitepaper1Modal" tabindex="-1" aria-labelledby="whitepaper1ModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        <div class="modal-content-inner">
+                            <div class="modal-title">
+                                <h4>Shows form in hubspot</h4>
+                            </div>
+                            <script charset="utf-8" type="text/javascript"
+                                src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+                            <script>
+                                hbspt.forms.create({
+                                    region: "eu1",
+                                    portalId: "144410373",
+                                    formId: "b993b444-4414-43d3-bdd9-ec6e3bc2a293"
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- whitepaper2Modal -->
+        <div class="modal fade" id="whitepaper2Modal" tabindex="-1" aria-labelledby="whitepaper2ModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        <div class="modal-content-inner">
+                            <div class="modal-title">
+                                <h4>Shows form in hubspot</h4>
+                            </div>
+                            <script charset="utf-8" type="text/javascript"
+                                src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+                            <script>
+                                hbspt.forms.create({
+                                    region: "eu1",
+                                    portalId: "144410373",
+                                    formId: "f069dc61-85b0-4112-9427-0860c025534f"
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- newsletterModal -->
+        <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        <div class="modal-content-inner">
+                            <div class="modal-title">
+                                <h4>Shows form in hubspot</h4>
+                            </div>
+                            <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+                                    <script>
+                                        hbspt.forms.create({
+                                            region: "eu1",
+                                        portalId: "144410373",
+                                        formId: "e9905981-8076-40af-9f81-7ac98fc6e811"
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- privecyModal -->
+        <div class="modal fade" id="privecyModal" tabindex="-1" aria-labelledby="privecyModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        <div class="modal-content-inner">
+                            <div class="modal-title">
+                                <h4>Shows form in iubenda</h4>
+                            </div>
+                            <a href="https://www.iubenda.com/privacy-policy/23314762" class="iubenda-nostyle iubenda-noiframe iubenda-embed iubenda-noiframe " title="Datenschutzerklärung ">Datenschutzerklärung</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- cokiePolicyModal -->
+        <div class="modal fade" id="cokiePolicyModal" tabindex="-1" aria-labelledby="cokiePolicyModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        <div class="modal-content-inner">
+                            <div class="modal-title">
+                                <h4>Shows form in hubspot</h4>
+                            </div>
+                            <a href="https://www.iubenda.com/privacy-policy/23314762/cookie-policy" class="iubenda-nostyle iubenda-noiframe iubenda-embed iubenda-noiframe " title="Cookie-Richtlinie ">Cookie-Richtlinie</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- tramsAndConditionModal -->
+        <div class="modal fade" id="tramsAndConditionModal" tabindex="-1" aria-labelledby="tramsAndConditionModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        <div class="modal-content-inner">
+                            <div class="modal-title">
+                                <h4>Shows form in hubspot</h4>
+                            </div>
+                            <a href="https://www.iubenda.com/nutzungsbedingungen/23314762" class="iubenda-nostyle iubenda-noiframe iubenda-embed iubenda-noiframe " title="AGBs ">AGBs</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
 
@@ -362,26 +567,26 @@
 
     <!-- header sticky js -->
     <script>
-        // When the user scrolls the page, execute the function
-        window.onscroll = function () { toggleStickyHeader() };
-        function toggleStickyHeader() {
+                                                                                                                                // When the user scrolls the page, execute the function
+                                                                                                                                window.onscroll = function () {toggleStickyHeader()};
+                                                                                                                                function toggleStickyHeader() {
             // Get the header
             var header = document.getElementById("header");
 
-            // Get the offset position of the header
-            var sticky = header.offsetTop;
+                                                                                                                                // Get the offset position of the header
+                                                                                                                                var sticky = header.offsetTop;
 
             // Add the sticky class to the header when you reach its scroll position.
             // Remove "sticky" when you leave the scroll position
             if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
+                                                                                                                                    header.classList.add("sticky");
             } else {
-                header.classList.remove("sticky");
+                                                                                                                                    header.classList.remove("sticky");
             }
         }
     </script>
     <!-- download whitepaper js -->
-    <script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             function downloadImage(url, filename) {
                 const link = document.createElement('a');
@@ -408,7 +613,9 @@
                 }
             });
         });
-    </script>
+    </script> -->
+
+
 </body>
 
 </html>

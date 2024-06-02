@@ -30,10 +30,6 @@ body {
     margin: auto;
 }
 
-.modal.fade.show{
-    z-index: 999999;
-}
-
 ul {
     list-style: none;
     padding: 0px;
@@ -133,7 +129,7 @@ img {
     top: 0px;
     left: 0px;
     width: 100%;
-    z-index: 99999;
+    z-index: 111;
     transition: 0.3s;
 }
 .header-section.sticky{
@@ -608,3 +604,56 @@ img {
     color: #0F1634;
 }
 /* footer-style-end */
+
+
+/*-- popups --*/
+.modal.fade.show{
+    z-index: 9999;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.modal-dialog{
+    max-width: 731px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 99999999;
+}
+.modal-dialog.google-calender-modal{
+    max-width: 1151px;
+    width: 100%;
+    margin: auto;
+}
+.modal-content{
+    border-radius: 14px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+}
+.modal-body{
+    padding: 100px 20px;
+}
+.modal-body .btn-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.modal-content-inner{
+    max-width: 332px;
+    margin: auto;
+    text-align: center;
+}
+.modal-content-inner h4{
+    color: #000;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 84px
+}
