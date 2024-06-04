@@ -101,7 +101,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 23px;
+    padding: 9px 23px;
     color: #FFF;
     text-align: center;
     font-family: "Work Sans";
@@ -523,6 +523,9 @@ img {
 .newsletter-form .luup-input{
     max-width: 400px;
     width: 100%;
+}
+.newsletter-input{
+    display: none;
 }
 .luup-input input{
     color: #0F1634;
